@@ -2,10 +2,11 @@ package com.judemanutd.autostarterexample
 
 import android.os.Build
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.judemanutd.autostarter.AutoStartPermissionHelper
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        window?.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
 
         logDeviceInfo()
 

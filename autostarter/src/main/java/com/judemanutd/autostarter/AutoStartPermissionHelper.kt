@@ -333,7 +333,6 @@ class AutoStartPermissionHelper private constructor() {
             context.startActivity(intent)
         } catch (exception: Exception) {
             exception.printStackTrace()
-            throw exception
         }
     }
 
