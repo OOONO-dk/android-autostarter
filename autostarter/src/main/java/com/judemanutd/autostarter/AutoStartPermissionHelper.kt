@@ -171,6 +171,21 @@ class AutoStartPermissionHelper private constructor() {
         }
     }
 
+    private lateinit var failedListener: ()-> Unit
+
+    /**
+     * Checks whether the autostart permission is present in the manufacturer and supported by the library
+     *
+     * @param listener
+     * callback if sending user to a batterysetting screen fails. This happen fx in huawei, it gives a security exception.
+     * Adding the permission for it does not help always.
+     */
+    fun registerOpenSettingsFailedListener(
+        listener: ()-> Unit
+    ) {
+        failedListener = listener
+    }
+
     /**
      * Checks whether the autostart permission is present in the manufacturer and supported by the library
      *
@@ -332,6 +347,7 @@ class AutoStartPermissionHelper private constructor() {
             context.startActivity(intent)
         } catch (exception: Exception) {
             exception.printStackTrace()
+           if(::failedListener.isInitialized) failedListener()
         }
     }
 

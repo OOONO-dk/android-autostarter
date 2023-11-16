@@ -5,7 +5,7 @@
         android:name="android.permission.QUERY_ALL_PACKAGES"
         tools:ignore="QueryAllPackagesPermission" />-->
 
-<!--    <uses-permission android:name="com.huawei.permission.external_app_settings.USE_COMPONENT"/>-->
+    <uses-permission android:name="com.huawei.permission.external_app_settings.USE_COMPONENT"/>
     <uses-permission android:name="oppo.permission.OPPO_COMPONENT_SAFE"/>
 
     <queries>

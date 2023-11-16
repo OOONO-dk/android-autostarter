@@ -78,13 +78,13 @@ If false, the method will return true as long as the permission exist even if th
  4. Honor [ Untested ]
  5. Oppo [ Untested ]
  6. Vivo [ Untested ]
- 7. Huawei [ removed ]
+ 7. Huawei
  8. Samsung
  9. Asus
  10. One Plus [ Untested ]
 
  I will be adding support for other manufacturers as and when possible. I am also open to PR's and contributions from others.
- Huawei is removed because it throws a security exception when trying to sent users to settings page.
+
 
 ## Related Info
 
