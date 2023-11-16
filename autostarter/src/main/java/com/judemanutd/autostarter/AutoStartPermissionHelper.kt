@@ -11,7 +11,6 @@ import android.provider.Settings
 import java.util.*
 
 class AutoStartPermissionHelper private constructor() {
-
     /***
      * Xiaomi
      */
