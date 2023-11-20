@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.judemanutd.autostarter.AutoStartPermissionHelper
+import com.ooono.autostarterexample.R
 
 class MainActivity : AppCompatActivity() {
 

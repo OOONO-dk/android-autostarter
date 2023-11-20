@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 //apply plugin: 'kotlin-android-extensions'
 
 android {
+    namespace ="com.ooono.autostarterexample"
     compileSdkVersion 33
     defaultConfig {
         applicationId "com.judemanutd.autostarterexample"
