@@ -32,7 +32,7 @@ Add this to your module's `build.gradle` file:
 ```groovy
 dependencies {
         // ... other dependencies
-        implementation 'com.github.OOONO-dk:android-autostarter:1.1.1'
+        implementation 'com.github.OOONO-dk:android-autostarter:1.1.3'
 }
 ```
 
