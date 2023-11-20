@@ -6,7 +6,7 @@ android {
     namespace ="com.ooono.autostarterexample"
     compileSdkVersion 33
     defaultConfig {
-        applicationId "com.judemanutd.autostarterexample"
+        applicationId "com.ooono.autostarterexample"
         minSdkVersion 26
         targetSdkVersion 33
         versionCode 6
